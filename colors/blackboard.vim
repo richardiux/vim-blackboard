@@ -28,7 +28,8 @@ if has("gui_running")
   highlight Normal guifg=White   guibg=#0B1022
   highlight Cursor guifg=Black   guibg=Yellow
   highlight CursorLine guibg=#191E2F
-  highlight LineNr guibg=#323232 guifg=#888888
+  "highlight LineNr guibg=#323232 guifg=#888888
+  highlight LineNr guibg=#0B1022 guifg=#333333 ctermfg=darkgray gui=NONE ctermbg=NONE        cterm=NONE
   highlight Folded guifg=#1d2652 guibg=#070a15
   highlight Pmenu guibg=#84A7C1
   highlight Visual guibg=#283A76
@@ -46,8 +47,11 @@ if has("gui_running")
   highlight PreProc guifg=#FF5600
 
   " StatusLine
-  highlight StatusLine  guifg=#000000 guibg=#ffffaf gui=italic
-  highlight StatusLineNC  guifg=#000000 guibg=#ffffff gui=NONE
+  hi VertSplit        guifg=#202020     guibg=#202020     gui=NONE      ctermfg=darkgray    ctermbg=darkgray    cterm=NONE
+  hi StatusLine       guifg=#eeeeee     guibg=#202020     gui=italic    ctermfg=white       ctermbg=darkgray    cterm=NONE
+  hi StatusLineNC     guifg=#777777     guibg=#202020     gui=NONE      ctermfg=blue        ctermbg=darkgray    cterm=NONE 
+  "highlight StatusLine  guifg=#000000 guibg=#ffffaf gui=italic
+  "highlight StatusLineNC  guifg=#000000 guibg=#ffffff gui=NONE
 
   "Invisible character colors
   highlight NonText guifg=#4a4a59
